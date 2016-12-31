@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="star-background"></div>
+    <div id="gradient"></div>
+    <div id="hi">
+      Hi there !<br><br>
+      Thank you for using the Techspardha app <link> and website<link>.<br> We hope you are having a good experience. Can you help us in improving the product ?<br> Please take two minutes to share your feedback by the following form :
+    </div>
+    <div id="form">
+      <form role = "form" id="feedback" target="_self" action="javacript: postToGoogle()">
+        <ul>
+          <div>
+
+          <div class="ques">
+          <li>You are providing feedback for :</li><br>
+          <li class="radio"><input type="radio" name="ques1" value="Techspardha Website" id="ques1">Techspardha Website</li>
+          <li class="radio"><input type="radio" name="ques1" value="Techspardha App" id="ques1">Techspardha App</li>
+          <li class="radio"><input type="radio" name="ques1" value="Both" id="ques1">Both</li>
+          </div>
+          <br>
+
+          <div class="ques">
+          <li>Overall, how well does our website/app meet your needs ?</li><br>
+          <li class="radio"><input type="radio" name="ques2" value="Extremely well" id="ques2">Extremely well</li>
+          <li class="radio"><input type="radio" name="ques2" value="Very well" id="ques2">Very well</li>
+          <li class="radio"><input type="radio" name="ques2" value="Somewhat well" id="ques2">Somewhat well</li>
+          <li class="radio"><input type="radio" name="ques2" value="Not so well" id="ques2">Not so well</li>
+          <li class="radio"><input type="radio" name="ques2" value="Not at all well" id="ques2">Not at all well</li>
+          </div>
+          <br>
+
+          <div class="ques">
+          <li>How easy was it to find what you were looking for on our website/app ?</li><br>
+          <li class="radio"><input type="radio" name="ques3" value="Extremely easy" id="ques3">Extremely easy</li>
+          <li class="radio"><input type="radio" name="ques3" value="Very easy" id="ques3">Very easy</li>
+          <li class="radio"><input type="radio" name="ques3" value="Somewhat easy" id="ques3">Somewhat easy</li>
+          <li class="radio"><input type="radio" name="ques3" value="Not so easy" id="ques3">Not so easy</li>
+          <li class="radio"><input type="radio" name="ques3" value="Not at all easy" id="ques3">Not at all easy</li>
+          </div>
+          <br>
+
+          <div class="ques">
+          <li>How visually appealing is our website/app ?</li><br>
+          <li class="radio"><input type="radio" name="ques4" value="Extremely appealing" id="ques4">Extremely appealing</li>
+          <li class="radio"><input type="radio" name="ques4" value="Very appealing" id="ques4">Very appealing</li>
+          <li class="radio"><input type="radio" name="ques4" value="Somewhat appealing" id="ques4">Somewhat appealing</li>
+          <li class="radio"><input type="radio" name="ques4" value="Not so appealing" id="ques4">Not so appealing</li>
+          <li class="radio"><input type="radio" name="ques4" value="Not at all appealing" id="ques4">Not at all appealing</li>
+          </div>
+          <br>
+
+          <div class="ques">
+          <li><input type="text" class="text" placeholder="What do you find most frustrating about website / app ?" required autocomplete="off" id="ques5"></li>
+          </div>
+          <br>
+
+          <div class="ques">
+          <li><input type="text" class="text" placeholder="How would you describe website / app in one or more words ?" required autocomplete="off" id="ques6"></li>
+        </div>
+          <br>
+
+          <div class="ques">
+          <li>How likely is it that you would recommend our website to a friend or colleague ?<li><br>
+          <li>
+            <select class="drop-down" required autocomplete="off" id="ques7" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+  					</select>
+          </li>
+        </div>
+        <br>
+
+          <div class="ques">
+          <li>Overall, how satisfied or dissatisfied are you with our work ?</li><br>
+          <li class="radio"><input type="radio" name="ques8" value="Very satisfied" id="ques8">Very satisfied</li>
+          <li class="radio"><input type="radio" name="ques8" value="Somewhat satisfied" id="ques8">Somewhat satisfied</li>
+          <li class="radio"><input type="radio" name="ques8" value="Neither satisfied nor dissatisfied" id="ques8">Neither satisfied nor dissatisfied</li>
+          <li class="radio"><input type="radio" name="ques8" value="Somewhat dissatisfied" id="ques8">Somewhat dissatisfied</li>
+          <li class="radio"><input type="radio" name="ques8" value="Very dissatisfied" id="ques8">Very dissatisfied</li>
+        </div>
+        <br>
+
+          <div class="ques">
+          <li><textarea placeholder="Do you have any other comments, questions, or concerns ?" class="text" autocomplete="off" id="ques9" required></textarea></li>
+        </div>
+          <br>
+
+          <li><input id = "submitButton" type="Submit" value = "Submit" class = "button"></li>
+
+        <br>
+        </ul>
+      </form>
+    </div>
+  </body>
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/TweenMax.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/postData.js"></script>
+
+</html>
