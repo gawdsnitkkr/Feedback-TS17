@@ -51,31 +51,31 @@
 			}
 			, 0.1
 			);
-			TweenMax.to("#astronaut", 10, {
-				rotationZ: 360,
-				repeat: -1,
-				ease: Power0.easeNone
-			}
-			);
+// 			TweenMax.to("#astronaut", 10, {
+// 				rotationZ: 360,
+// 				repeat: -1,
+// 				ease: Power0.easeNone
+// 			}
+// 			);
 		},
-		move: function() {
-			console.log('moving');
-			var tp = Functions.getRandomInt(-200, window.innerHeight+200) + 'px';
-			var lft = Functions.getRandomInt(0, (window.innerWidth/6) + 200) + 'px';
-			$('#astronaut').animate( {
-				left: lft,
-				top: tp,
-			}, 10000);
-		},
+// 		move: function() {
+// 			console.log('moving');
+// 			var tp = Functions.getRandomInt(-200, window.innerHeight+200) + 'px';
+// 			var lft = Functions.getRandomInt(0, (window.innerWidth/6) + 200) + 'px';
+// 			$('#astronaut').animate( {
+// 				left: lft,
+// 				top: tp,
+// 			}, 10000);
+// 		},
 		getRandomInt: function(min, max) {
 			return Math.floor(Math.random() * (max - min + 1)) + min;
 		},
-		callInterval : function() {
-			console.log('call interval');
-			setInterval(function(){
-				Functions.move();
-			},10001);
-		},
+// 		callInterval : function() {
+// 			console.log('call interval');
+// 			setInterval(function(){
+// 				Functions.move();
+// 			},10001);
+// 		},
 
 	};
 	dO.ready( function() {
@@ -83,9 +83,9 @@
 		Vars.noOfStars = Functions.getRandomInt(100, window.innerWidth) / 3;
 		Functions.addStars();
 		Functions.twinkle();
-		Functions.move();
-		setTimeout(function(){
-			Functions.callInterval();
-		}, 10001);
+// 		Functions.move();
+// 		setTimeout(function(){
+// 			Functions.callInterval();
+// 		}, 10001);
 	});
 })(document, jQuery(document), jQuery);
